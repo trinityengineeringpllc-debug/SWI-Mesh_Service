@@ -4,3 +4,4 @@ httpx==0.28.1
 numpy==2.2.4
 pygrib==2.1.6
 pydantic==2.10.6
+certifi==2025.1.31
