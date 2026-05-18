@@ -28,8 +28,8 @@ MTARCHIVE_BASE = os.getenv("MTARCHIVE_BASE", "https://mtarchive.geol.iastate.edu
 CACHE_DIR = Path(os.getenv("CACHE_DIR", "/tmp/mrms-cache" if os.name != "nt" else "./mrms-cache"))
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-HTTP_TIMEOUT_SECONDS = float(os.getenv("HTTP_TIMEOUT_SECONDS", "45"))
-DOWNLOAD_TIMEOUT_SECONDS = float(os.getenv("DOWNLOAD_TIMEOUT_SECONDS", "180"))
+HTTP_TIMEOUT_SECONDS = float(os.getenv("HTTP_TIMEOUT_SECONDS", "90"))
+DOWNLOAD_TIMEOUT_SECONDS = float(os.getenv("DOWNLOAD_TIMEOUT_SECONDS", "300"))
 
 MM_PER_INCH = 25.4
 EARTH_RADIUS_MILES = 3958.7613
